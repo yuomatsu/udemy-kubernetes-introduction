@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  # serviceの名前.namespace.service.クラスター
+  # cluster.local = 同じクラスター内
+  MYSQL_DATABASE: test_db
+  MYSQL_HOST: mysql.database.svc.cluster.local
+  MYSQL_USER: sample_app
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: sample-app
